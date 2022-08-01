@@ -4,15 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="weatherApp.css" />
     <title>Document</title>
   </head>
-  <body>
-    <label for="city">Enter The City name</label>
-    <input type="text" name="city" id="city-name" />
-    <br />
-    <button id="confirm-city">Confirm</button>
-    <div class="output"></div>
 
+  <body>
+    <div class="content">
+      <div class="input-section">
+        <input
+          type="text"
+          id="city-name-input"
+          placeholder="Enter The City name"
+        />
+        <button id="confirm-city-button">Confirm</button>
+      </div>
+      <div id="output">
+        <h1 class="warning-paragraph"></h1>
+        <p class="weather-info name-of-city">Location:</p>
+        <p class="weather-info temprature">Temprature:</p>
+        <p class="weather-info wind-speed">Wind speed:</p>
+        <p class="weather-info clouds">Clouds status:</p>
+      </div>
+    </div>
     <script src="weatherApp.js" type="module"></script>
   </body>
 </html>
